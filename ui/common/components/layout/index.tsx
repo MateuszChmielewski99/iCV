@@ -9,7 +9,7 @@ export const Layout: React.FC<LayoutProps> = (props) => {
   return (
     <>
       <Nav />
-      <main>{props.children}</main>
+      <main><div className="layout__container">{props.children}</div></main>
     </>
   );
 };

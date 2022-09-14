@@ -1,6 +1,8 @@
 import { SectionIds } from "../sectionIds";
-import styles from '../../../styles/sections/Common.module.css';
+import commonStyles from '../../../styles/sections/Common.module.css';
+import styles from '../../../styles/sections/About.module.css';
+
 
 export const About = () => {
-    return <div id={SectionIds.About} className={styles.section}>About</div>
+    return <section id={SectionIds.About} className={`${commonStyles.section} ${styles.section__about}`}>About</section>
 }

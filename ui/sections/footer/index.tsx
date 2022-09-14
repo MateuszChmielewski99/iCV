@@ -1,10 +1,11 @@
 import { SectionIds } from "../sectionIds";
-import styles from '../../../styles/sections/Common.module.css';
+import commonStyles from '../../../styles/sections/Common.module.css';
+import styles from '../../../styles/sections/Footer.module.css';
 
 export const Footer = () => {
   return (
-    <div id={SectionIds.Footer} className={styles.section}>
+    <section id={SectionIds.Footer} className={`${commonStyles.section} ${styles.section__footer}`}>
       <footer>Footer</footer>
-    </div>
+    </section>
   );
 };
